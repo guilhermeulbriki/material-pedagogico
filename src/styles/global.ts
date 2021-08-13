@@ -38,6 +38,10 @@ export default createGlobalStyle`
 
   html {
     font-size: 62.5%;
+
+    @media(max-width: 1280px) {
+      font-size: 55%;
+    } 
   }
 
   body {
@@ -49,7 +53,10 @@ export default createGlobalStyle`
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     line-height: 150%;
-    color: var(--primary-gradient);
+    background: var(--primary-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 4rem;
   }
 
@@ -68,5 +75,9 @@ export default createGlobalStyle`
     max-width: 135.9rem;
     padding: 0 1.6rem;
     margin: 0 auto;
+
+    @media(max-width: 1280px) {
+      padding: 0 2rem;
+    } 
   }
 `;
