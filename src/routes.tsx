@@ -18,9 +18,13 @@ import CompetenciasSeculo from "./pages/PilaresEducacionais/CompetenciasSeculo";
 import JovemContemporaneo from "./pages/JovemContemporaneo";
 import DesenvolvimentoIdade from "./pages/JovemContemporaneo/DesenvolvimentoIdade";
 import AlunoProtagonista from "./pages/JovemContemporaneo/AlunoProtagonista";
+import EscolaFamilia from "./pages/JovemContemporaneo/EscolaFamilia";
 
 import ScrollToTop from "./utils/ScrollToTop";
 import PlataformaMooney from "./pages/AlfabetizacaoFinanceira/PlataformaMooney";
+import BnccEnsinoMedio from "./pages/PilaresEducacionais/BnccEnsinoMedio";
+import MetodologiaMooney from "./pages/PilaresEducacionais/MetodologiaMooney";
+import EstruturaPedagogica from "./pages/PilaresEducacionais/EstruturaPedagogica";
 
 const Routes: React.FC = () => {
   return (
@@ -74,6 +78,11 @@ const Routes: React.FC = () => {
           component={AlunoProtagonista}
           exact
         />
+        <Route
+          path="/jovem-contemporaneo/escola-familia-sociedade"
+          component={EscolaFamilia}
+          exact
+        />
 
         <Route
           path="/pilares-educacionais"
@@ -83,6 +92,21 @@ const Routes: React.FC = () => {
         <Route
           path="/pilares-educacionais/competenciais-para-o-seculo-xxi"
           component={CompetenciasSeculo}
+          exact
+        />
+        <Route
+          path="/pilares-educacionais/bncc-novo-ensino-medio"
+          component={BnccEnsinoMedio}
+          exact
+        />
+        <Route
+          path="/pilares-educacionais/metodologia-mooney"
+          component={MetodologiaMooney}
+          exact
+        />
+        <Route
+          path="/pilares-educacionais/estrutura-pedagogica-mooney"
+          component={EstruturaPedagogica}
           exact
         />
       </Switch>

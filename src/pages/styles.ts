@@ -144,6 +144,7 @@ export const ContentText = styled.section`
     margin-bottom: 1.6rem;
 
     &.indetention {
+      text-indent: 0;
       margin-left: 20%;
     }
 
@@ -209,6 +210,29 @@ export const ContentText = styled.section`
       margin-top: 2.4rem;
       text-align: center;
     }
+  }
+
+  .tabela {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+
+    > img {
+      max-width: 1000px;
+      width: 100%;
+    }
+
+    > p {
+      margin-top: 2.4rem;
+      text-align: center;
+    }
+  }
+
+  .center {
+    text-align: center;
   }
 
   @media (max-width: 800px) {

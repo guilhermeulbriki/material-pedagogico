@@ -112,29 +112,37 @@ const Menu: React.FC<MenuProps> = ({ isHidden }) => {
           <ul>
             <li>
               <div className="point"></div>
-              <Link to="pilares-educacionais/competenciais-para-o-seculo-xxi">
+              <Link to="/pilares-educacionais/competenciais-para-o-seculo-xxi">
                 Competências para o séclulo XXI
               </Link>
             </li>
 
             <li>
               <div className="point"></div>
-              <Link to="">A BNCC e o novo ensino médio</Link>
+              <Link to="/pilares-educacionais/bncc-novo-ensino-medio">
+                A BNCC e o novo ensino médio
+              </Link>
             </li>
 
             <li>
               <div className="point"></div>
-              <Link to="">Metodologia Mooney</Link>
+              <Link to="/pilares-educacionais/metodologia-mooney">
+                Metodologia Mooney
+              </Link>
             </li>
 
             <li>
               <div className="point"></div>
-              <Link to="">Estrutura Pedagógica Mooney</Link>
+              <Link to="/pilares-educacionais/estrutura-pedagogica-mooney">
+                Estrutura Pedagógica Mooney
+              </Link>
             </li>
 
             <li>
               <div className="point"></div>
-              <Link to="">O professor mediador</Link>
+              <Link to="/pilares-educacionais/professor-mediador">
+                O professor mediador
+              </Link>
             </li>
 
             <li>
