@@ -155,6 +155,16 @@ export const ContentText = styled.section`
     .itallic {
       font-style: italic;
     }
+
+    a {
+      font-size: 1.6rem;
+      line-height: 150%;
+      color: var(--grayscale-700);
+      text-indent: 2rem;
+      text-align: justify;
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
 
   ul {

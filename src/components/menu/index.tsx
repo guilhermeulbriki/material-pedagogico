@@ -147,7 +147,7 @@ const Menu: React.FC<MenuProps> = ({ isHidden }) => {
 
             <li>
               <div className="point"></div>
-              <Link to="">
+              <Link to="/pilares-educacionais/diretrizes-pedagogicas-para-o-ambiente-de-aprendizagem">
                 Diretrizes pedagógicas para o ambiente de aprendizagem
               </Link>
             </li>
@@ -158,9 +158,15 @@ const Menu: React.FC<MenuProps> = ({ isHidden }) => {
           iconColor={"#fdd547"}
           icon={microphoneIcon}
           title="Palavras Finais"
+          url="/palavras-finais"
         />
 
-        <ItemMenu iconColor={"#ff9100"} icon={bookIcon} title="Referências" />
+        <ItemMenu
+          iconColor={"#ff9100"}
+          url="/referencias"
+          icon={bookIcon}
+          title="Referências"
+        />
       </ul>
     </Container>
   );

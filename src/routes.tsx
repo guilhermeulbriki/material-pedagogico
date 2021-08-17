@@ -28,6 +28,10 @@ import EstruturaPedagogica from "./pages/PilaresEducacionais/EstruturaPedagogica
 import ProfessorMediador from "./pages/PilaresEducacionais/ProfessorMediador";
 import DiretrizesPedagogicas from "./pages/PilaresEducacionais/DiretrizesPedagogicas";
 
+import PalavrasFinais from "./pages/PalavrasFinais";
+
+import Referencias from "./pages/Referencias";
+
 const Routes: React.FC = () => {
   return (
     <BrowserRouter>
@@ -121,6 +125,10 @@ const Routes: React.FC = () => {
           component={DiretrizesPedagogicas}
           exact
         />
+
+        <Route path="/palavras-finais" component={PalavrasFinais} exact />
+
+        <Route path="/referencias" component={Referencias} exact />
       </Switch>
     </BrowserRouter>
   );

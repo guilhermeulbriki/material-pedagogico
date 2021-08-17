@@ -66,7 +66,7 @@ const Apresentacao: React.FC = () => {
           </ContentText>
 
           <div className="redirect">
-            <Link to="mundo-mooney">1.0 - O Mundo Mooney</Link>
+            <Link to="/mundo-mooney">1.0 - O Mundo Mooney</Link>
 
             <img src={arrowRight} alt="arrow" />
           </div>

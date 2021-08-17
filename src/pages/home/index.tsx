@@ -70,11 +70,13 @@ const Home: React.FC = () => {
                 icon={microphoneIcon}
                 title="Palavras Finais"
                 iconColor="#fdd547"
+                url="palavras-finais"
               />
 
               <ItemHome
                 icon={bookIcon}
                 title="Referências"
+                url="referencias"
                 iconColor="#ff9100"
               />
             </ul>
