@@ -121,6 +121,44 @@ const EstruturaPedagogica: React.FC = () => {
             <div className="tabela">
               <img src={tabela8} alt="tabela" />
             </div>
+
+            <p>
+              <strong>4.4.2 Ensino Médio - Mooney Lab I</strong>
+            </p>
+            <p>
+              Já para o Ensino Médio, o foco do aluno muda para um planejamento
+              de carreira. Independente de qual carreira o aluno decida seguir,
+              ele vai ter que lidar com suas finanças. Então, a proposta trazida
+              é de um programa que contemple o projeto de vida na perspectiva
+              financeira.
+            </p>
+            <p>
+              Como a BNCC estabelece matérias eletivas, o projeto de educação
+              financeira da Mooney pode e deve ser oferecido para todos os anos
+              do Ensino Médio. Por isso, criamos a proposta do primeiro módulo
+              do Mooney Lab (outros módulos serão desenvolvidos para a
+              continuidade nos próximos anos). Em 2022, a proposta do Mooney Lab
+              I contará com uma oficina de investimentos. Como o aluno terá seu
+              projeto de vida estabelecido e se planejado financeiramente,
+              apresentaremos ferramentas, simulações, para que o aluno consiga
+              entender como transformar a teoria do planejamento financeiro em
+              ações práticas.
+            </p>
+            <p>
+              A esquematização do Mooney Lab I pode ser conferida abaixo, sendo
+              que um aprofundamento do conteúdo está descrito ao final desta
+              seção:
+            </p>
+            <p>
+              Mooney Lab I - Projeto de vida na perspectiva das finanças Pensar
+              sobre o projeto de vida na perspectiva financeira entendendo o
+              porquê o dinheiro é importante, além de investimentos de renda
+              fixa e variável, aliado à simulações básicas para o entendimento
+              das principais características;
+            </p>
+            <div className="tabela">
+              <img src={tabela9} alt="tabela" />
+            </div>
           </ContentText>
 
           <div className="redirect">

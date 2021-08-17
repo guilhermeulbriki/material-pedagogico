@@ -25,6 +25,8 @@ import PlataformaMooney from "./pages/AlfabetizacaoFinanceira/PlataformaMooney";
 import BnccEnsinoMedio from "./pages/PilaresEducacionais/BnccEnsinoMedio";
 import MetodologiaMooney from "./pages/PilaresEducacionais/MetodologiaMooney";
 import EstruturaPedagogica from "./pages/PilaresEducacionais/EstruturaPedagogica";
+import ProfessorMediador from "./pages/PilaresEducacionais/ProfessorMediador";
+import DiretrizesPedagogicas from "./pages/PilaresEducacionais/DiretrizesPedagogicas";
 
 const Routes: React.FC = () => {
   return (
@@ -107,6 +109,16 @@ const Routes: React.FC = () => {
         <Route
           path="/pilares-educacionais/estrutura-pedagogica-mooney"
           component={EstruturaPedagogica}
+          exact
+        />
+        <Route
+          path="/pilares-educacionais/professor-mediador"
+          component={ProfessorMediador}
+          exact
+        />
+        <Route
+          path="/pilares-educacionais/diretrizes-pedagogicas-para-o-ambiente-de-aprendizagem"
+          component={DiretrizesPedagogicas}
           exact
         />
       </Switch>
