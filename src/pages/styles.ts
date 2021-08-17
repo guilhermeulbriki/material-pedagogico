@@ -28,6 +28,7 @@ export const Content = styled.main<ContentProps>`
   padding-top: 6.4rem;
 
   .title {
+    width: 100%;
     display: flex;
     align-items: center;
     margin-top: 4rem;
@@ -44,10 +45,14 @@ export const Content = styled.main<ContentProps>`
     }
 
     .section {
+      width: 100%;
       display: flex;
+      flex-direction: row;
       align-items: center;
+      overflow-x: auto;
 
       h4 {
+        white-space: nowrap;
         font-size: 2.4rem;
         font-weight: normal;
         line-height: 150%;
@@ -56,6 +61,7 @@ export const Content = styled.main<ContentProps>`
       }
 
       h3 {
+        white-space: nowrap;
         margin-left: 1.6rem;
         font-size: 2.4rem;
         line-height: 150%;
@@ -80,7 +86,8 @@ export const Content = styled.main<ContentProps>`
       }
 
       .section {
-        h3 {
+        h3,
+        h4 {
           font-size: 18px;
         }
       }
@@ -125,6 +132,7 @@ export const ContentText = styled.section`
     font-weight: 600;
     color: var(--grayscale-900);
     margin-bottom: 1.6rem;
+    margin-top: 3.2rem;
   }
 
   p {
@@ -156,7 +164,7 @@ export const ContentText = styled.section`
     width: 100%;
 
     &.indentention {
-      margin-left: 2.4rem;
+      padding-left: 2.4rem;
     }
 
     li {
@@ -193,6 +201,7 @@ export const ContentText = styled.section`
     margin-bottom: 1.6rem;
 
     > img {
+      width: 100%;
       max-width: 600px;
     }
 

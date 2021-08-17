@@ -47,6 +47,7 @@ const Home: React.FC = () => {
 
               <ItemHome
                 icon={financeIcon}
+                url="alfabetizacao-financeira"
                 title="Alfabetização Financeira"
                 iconColor="#D2269A"
               />
@@ -55,6 +56,7 @@ const Home: React.FC = () => {
                 icon={childIcon}
                 title="O Jovem Contemporâneo"
                 iconColor="#F13A83"
+                url="jovem-contemporaneo"
               />
 
               <ItemHome

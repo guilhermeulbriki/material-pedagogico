@@ -58,7 +58,7 @@ export const Container = styled.li<ContainerProps>`
 
   nav ul {
     margin-top: 3.2rem;
-    margin-left: 4rem;
+    padding-left: 4rem;
     width: 100%;
 
     display: flex;
@@ -88,7 +88,6 @@ export const Container = styled.li<ContainerProps>`
 
       > a {
         width: 100%;
-        max-width: 31.6rem;
         font-size: 1.6rem;
         line-height: 150%;
         transition: color 0.3s;

@@ -26,13 +26,13 @@ const Menu: React.FC<MenuProps> = ({ isHidden }) => {
           iconColor={"#485AF0"}
           icon={presentationIcon}
           title="Apresentação"
-          url="apresentacao"
+          url="/apresentacao"
         />
 
         <ItemMenu
           iconColor={"#5E2EC3"}
           icon={mooneyIcon}
-          url="mundo-mooney"
+          url="/mundo-mooney"
           title="O Mundo Mooney"
         />
 
@@ -40,26 +40,35 @@ const Menu: React.FC<MenuProps> = ({ isHidden }) => {
           iconColor={"#D2269A"}
           icon={financeIcon}
           title="Alfabetização Financeira"
+          url="/alfabetizacao-financeira"
         >
           <ul>
             <li>
               <div className="point"></div>
-              <Link to="">Educação Financeira</Link>
+              <Link to="/alfabetizacao-financeira/educacao-financeira">
+                Educação Financeira
+              </Link>
             </li>
 
             <li>
               <div className="point"></div>
-              <Link to="">Competências Socioemocionais</Link>
+              <Link to="/alfabetizacao-financeira/competencias-socioemocionais">
+                Competências Socioemocionais
+              </Link>
             </li>
 
             <li>
               <div className="point"></div>
-              <Link to="">Educação, tecnologias e gamificação</Link>
+              <Link to="/alfabetizacao-financeira/educacao-tecnologias-gamificacao">
+                Educação, tecnologias e gamificação
+              </Link>
             </li>
 
             <li>
               <div className="point"></div>
-              <Link to="">Plataforma Mooney (App e Web)</Link>
+              <Link to="/alfabetizacao-financeira/plataforma-mooney">
+                Plataforma Mooney (App e Web)
+              </Link>
             </li>
           </ul>
         </ItemMenu>
@@ -68,26 +77,28 @@ const Menu: React.FC<MenuProps> = ({ isHidden }) => {
           iconColor={"#F13A83"}
           icon={childIcon}
           title="O jovem Contemporâneo"
+          url="/jovem-contemporaneo"
         >
           <ul>
             <li>
               <div className="point"></div>
-              <Link to="">9 a 11 anos</Link>
+              <Link to="/jovem-contemporaneo/desenvolvimento-conforme-idade">
+                O Desenvolvimento Conforme a Idade
+              </Link>
             </li>
 
             <li>
               <div className="point"></div>
-              <Link to="">12 a 13 anos</Link>
+              <Link to="/jovem-contemporaneo/aluno-protagonista">
+                O Aluno Protagonista
+              </Link>
             </li>
 
             <li>
               <div className="point"></div>
-              <Link to="">14 a 15 anos</Link>
-            </li>
-
-            <li>
-              <div className="point"></div>
-              <Link to="">16 a 18 anos</Link>
+              <Link to="/jovem-contemporaneo/escola-familia-sociedade">
+                Escola, Família e Sociedade
+              </Link>
             </li>
           </ul>
         </ItemMenu>
