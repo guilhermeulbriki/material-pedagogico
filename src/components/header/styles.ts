@@ -8,6 +8,8 @@ export const Container = styled.div`
   width: 100%;
   height: 6.4rem;
   background: var(--primary-gradient);
+  position: fixed;
+  z-index: 1000;
 
   display: flex;
   align-items: center;
@@ -29,11 +31,39 @@ export const Left = styled.section`
   > nav {
     margin-left: 4.8rem;
 
-    ul li a {
-      font-size: 1.6rem;
-      font-weight: 300;
-      line-height: 150%;
-      color: var(--grayscale-white);
+    ul {
+      display: flex;
+      align-items: center;
+
+      li {
+        position: relative;
+
+        & + li {
+          margin-left: 1.6rem;
+
+          a {
+            &::before {
+              height: 1px;
+              width: 16px;
+              content: "";
+              position: absolute;
+              transform: rotate(-72deg) translateY(-11px) translateX(-16px);
+              background-color: var(--grayscale-white);
+            }
+          }
+        }
+
+        a {
+          font-size: 1.6rem;
+          font-weight: 300;
+          line-height: 150%;
+          color: var(--grayscale-white);
+        }
+
+        strong {
+          font-weight: 600;
+        }
+      }
     }
   }
 

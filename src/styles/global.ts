@@ -19,6 +19,7 @@ export default createGlobalStyle`
     --auxiliar-orange: #ff9100;
     --auxiliar-pink: #D2269A;
     --auxiliar-magenta: #F13A83;
+    --auxiliar-purple: #5E2EC3;
   }
 
   * {
@@ -49,15 +50,18 @@ export default createGlobalStyle`
     background: var(--content-white);
   }
 
-  h1, h2, h3, h4, h5 {
+  h1, h2, h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     line-height: 150%;
+    font-size: 4rem;
+  }
+
+  h1, h2 {
     background: var(--primary-gradient);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 4rem;
   }
 
   h2 {
@@ -72,8 +76,8 @@ export default createGlobalStyle`
 
   .container {
     width: 100%;
-    max-width: 135.9rem;
-    padding: 0 1.6rem;
+    max-width: 137.5rem;
+    padding: 0 3.2rem;
     margin: 0 auto;
 
     @media(max-width: 1280px) {

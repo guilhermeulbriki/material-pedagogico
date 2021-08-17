@@ -5,12 +5,12 @@ interface ContainerProps {
 }
 
 export const Container = styled.div<ContainerProps>`
-  position: absolute;
+  position: fixed;
   z-index: 99;
   right: 0;
   bottom: 0;
   height: calc(100vh - 64px);
-  padding: 4rem;
+  padding: 4rem 0rem 0 4rem;
   width: 100%;
   max-width: 50rem;
   background-color: var(--content-gray);
@@ -34,11 +34,14 @@ export const Container = styled.div<ContainerProps>`
 
   h2 {
     width: 100%;
+    margin-bottom: 4rem;
   }
 
-  ul {
+  > ul {
     width: 100%;
     height: 100%;
+    padding-right: 4rem;
+    padding-bottom: 4rem;
     max-height: 100%;
     overflow-y: auto;
   }

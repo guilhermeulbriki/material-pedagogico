@@ -7,7 +7,7 @@ import logo from "../../assets/logo.svg";
 import { Container, Left, Right } from "./styles";
 import { useCallback } from "react";
 
-const Header: React.FC = () => {
+const Header: React.FC = ({ children }) => {
   const [menuIsHidden, setMenuIsHidden] = useState(false);
 
   const controlMenu = useCallback(() => {
@@ -22,13 +22,7 @@ const Header: React.FC = () => {
             <img src={logo} alt="logo mooney" />
           </Link>
 
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">Início</Link>
-              </li>
-            </ul>
-          </nav>
+          <nav>{children}</nav>
         </Left>
 
         <Right onClick={controlMenu} changeMenu={menuIsHidden}>

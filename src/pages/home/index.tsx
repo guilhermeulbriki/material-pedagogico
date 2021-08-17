@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Header from "../../components/header";
 import illustra from "../../assets/illustra-home.jpg";
@@ -11,11 +12,18 @@ import microphoneIcon from "../../assets/icons/microfone.svg";
 import bookIcon from "../../assets/icons/livro.svg";
 
 import { Container, ContentContainer, Content } from "./styles";
+import ItemHome from "../../components/item-home";
 
 const Home: React.FC = () => {
   return (
     <Container>
-      <Header />
+      <Header>
+        <ul>
+          <li>
+            <Link to="/">Início</Link>
+          </li>
+        </ul>
+      </Header>
 
       <ContentContainer>
         <div className="container">
@@ -23,61 +31,50 @@ const Home: React.FC = () => {
 
           <Content>
             <ul>
-              <li>
-                <article className="icon-bg-presentation">
-                  <img src={presentationIcon} alt="presentation" />
-                </article>
+              <ItemHome
+                icon={presentationIcon}
+                title="Apresentação"
+                iconColor="#485AF0"
+                url="apresentacao"
+              />
 
-                <span>Apresentação</span>
-              </li>
+              <ItemHome
+                icon={mooneyIcon}
+                title="O Mundo Mooney"
+                iconColor="#5E2EC3"
+                url="mundo-mooney"
+              />
 
-              <li>
-                <article className="icon-bg-mooney">
-                  <img src={mooneyIcon} alt="mooney" />
-                </article>
+              <ItemHome
+                icon={financeIcon}
+                title="Alfabetização Financeira"
+                iconColor="#D2269A"
+              />
 
-                <span>O Mundo Mooney</span>
-              </li>
+              <ItemHome
+                icon={childIcon}
+                title="O Jovem Contemporâneo"
+                iconColor="#F13A83"
+              />
 
-              <li>
-                <article className="icon-bg-finance">
-                  <img src={financeIcon} alt="finance education" />
-                </article>
+              <ItemHome
+                icon={squareIcon}
+                title="Pilares Educacionais"
+                url="pilares-educacionais"
+                iconColor="#F13A45"
+              />
 
-                <span>Alfabetização Financeira</span>
-              </li>
+              <ItemHome
+                icon={microphoneIcon}
+                title="Palavras Finais"
+                iconColor="#fdd547"
+              />
 
-              <li>
-                <article className="icon-bg-child">
-                  <img src={childIcon} alt="child" />
-                </article>
-
-                <span>O Jovem Contemporâneo</span>
-              </li>
-
-              <li>
-                <article className="icon-bg-square">
-                  <img src={squareIcon} alt="square" />
-                </article>
-
-                <span>Pilares Educacionais</span>
-              </li>
-
-              <li>
-                <article className="icon-bg-microphone">
-                  <img src={microphoneIcon} alt="microphone" />
-                </article>
-
-                <span>Palavras Finais</span>
-              </li>
-
-              <li>
-                <article className="icon-bg-book">
-                  <img src={bookIcon} alt="book" />
-                </article>
-
-                <span>Referências</span>
-              </li>
+              <ItemHome
+                icon={bookIcon}
+                title="Referências"
+                iconColor="#ff9100"
+              />
             </ul>
 
             <img src={illustra} alt="illustration" />
