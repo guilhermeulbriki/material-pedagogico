@@ -76,7 +76,7 @@ const EscolaFamilia: React.FC = () => {
           </ContentText>
 
           <div className="redirect">
-            <Link to="/pilares-educacionais">4.0 - Pilared Educacionais</Link>
+            <Link to="/pilares-educacionais">4.0 - Pilares Educacionais</Link>
 
             <img src={arrowRight} alt="arrow" />
           </div>
